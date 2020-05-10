@@ -44,7 +44,7 @@ def predict():
 
 			data["predictions"] = []
 
-			for (imagenetID, label, prob) in results[0]:
+			for (_, label, prob) in results[0]:
 				r = {"label": label, "probablity": float(prob)}
 				data["predictions"].append(r)
 
